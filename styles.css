@@ -1,24 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
     margin: 0;
 }
 
-.gradiente-eras {
-    background: linear-gradient(#A5C9A5, #7A2E39, #F7B0CC, #242E47
-    );
+
+/* NavBar -- Inicio */
+
+.navegacion{
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-header {
-    height: auto;
+.fondo{
+    padding: 32px 0;
+    background-color: #7A2E39;
+}
+
+nav {
+    text-align: right;
+    padding-right: 16px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 24px;
+    color: #b5e5f8;
+    width: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 16px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:capitalize;
+}
+
+.menu .navbar ul li a:hover{
+    color: #b5e5f8
+}
+
+/* NavBar -- Fin  */
+
+.gradiente-eras {
+    background: linear-gradient(#A5C9A5, #7A2E39, #F7B0CC, #242E47);
+}
+
+
+.titulo {
+    height: 150px;
     background-color: #7A2E39;
     color: aliceblue;
-    position: sticky;
-    position: -webkit-sticky;
+    position: relative;
+    margin-top: 0;
     padding: 20px 0;
     width: 100%;
-    top: 0;
-    z-index: 1000;
 
 }
+
 
 
 h1 {
@@ -30,30 +93,9 @@ h1 {
     text-transform: uppercase;
 }
 
-.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 40%;
-}
-
-li {
-    display: inline;
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "Bodoni Moda", serif;
-}
 
 main {
-    padding: 20px;
+    /* padding: 20px; */
     margin-top: 0;
 }
 
@@ -243,8 +285,10 @@ main {
 footer {
     height: 60px;
     background-color: #7A2E39;
+    position: absolute;
     display: inline-flex;
     width: 100%;
+
 }
 
 footer div {
